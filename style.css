@@ -162,6 +162,7 @@ body {
 
 .current-weather h2 {
     font-size: 1.8rem;
+    overflow: auto;
 }
 
 .weather-data h4 {
@@ -195,6 +196,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    overflow: auto;
 }
 
 .weather-cards .card {
@@ -237,16 +239,19 @@ body {
 
     .weather-input {
         width: 100%;
+        margin-top: 100px;
     }
 }
 
 @media (max-width: 750px) {
     .container {
         flex-direction: column;
-        padding: 15px;
+        padding: 45px;
     }
 
     .weather-input {
         width: 100%;
     }
 }
+
+
