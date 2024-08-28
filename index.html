@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academor Weather Project</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1 class="header">Academor Major Project</h1>
+    <div class="container">
+        <div class="weather-input">
+            <h3>Enter a City Name : </h3>
+            <br>
+            <input type="text" class="city-input" placeholder="Eg : Delhi ">
+            <br>
+            <button class="search-btn">Search</button>
+
+            <div class="separator">            </div>
+            <button class="location-btn"> Use Current Location</button>
+
+        </div>
+        <div class="weather-data">
+                <div class="current-weather">
+                    <div class="details">
+                        <h3></h3>
+                            
+                        <h4></h4>
+                        <h4></h4>
+                        <h4></h4>
+                    </div>
+                    <div class="icon">
+                        <img src=" " alt="">
+                        <h4></h4>
+                    </div>
+                </div>
+                <div class="days-forecast">
+                    <h2>7 - day Forecast</h2>
+                    <ul class="weather-cards">
+                        <li class="card">
+                            <h3></h3>
+                            
+                            <h4></h4>
+                            <h4></h4>
+                            <h4></h4>
+                        </li>
+                        <li class="card">
+                            <h3></h3>
+                            
+                            <h4></h4>
+                            <h4></h4>
+                            <h4></h4>
+                        </li>
+                        <li class="card">
+                            <h3></h3>
+                            
+                        <h4></h4>
+                        <h4></h4>
+                        <h4></h4>
+                        </li>
+                        <li class="card">
+                            <h3></h3>
+                            
+                            <h4></h4>
+                            <h4></h4>
+                            <h4></h4>
+                        </li>
+                        <li class="card">
+                            <h3></h3>
+                            
+                        <h4></h4>
+                        <h4></h4>
+                        <h4></h4>
+                        </li>
+                        <li class="card">
+                            <h3></h3>
+                            
+                        <h4></h4>
+                        <h4></h4>
+                        <h4></h4>
+                        </li>
+
+                        <li class="card">
+                            <h3></h3>
+                            
+                            <h4></h4>
+                            <h4></h4>
+                            <h4></h4>
+                        </li>
+                    </ul>
+                </div>
+
+        </div>
+        
+
+    </div>
+
+    <div class="footer">
+        <p >© 2024 Made by Harsha </p>
+    </div>
+
+
+    <script>
+        var today = new Date();
+        var day = today.getDate();
+        var month = today.getMonth() + 1; 
+        var year = today.getFullYear();
+         var formattedDate = day + '/' + month + '/' + year;
+        
+         document.getElementById('currDate').innerText = formattedDate;
+    </script>
+</body>
+</html>         
+
+<!-- var dateString = today.toLocaleDateString();
+        document.getElementById('currDate').innerText = dateString; -->
